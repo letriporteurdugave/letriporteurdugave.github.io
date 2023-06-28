@@ -41,6 +41,7 @@ header {
   flex-grow: 2;
   z-index: 10;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -72,15 +73,11 @@ h1 {
   margin-bottom: 5vh;
 }
 
-
 /*Section intro*/
 #intro img {
   margin-top: 5vh;
   max-width: 40%;
   height: auto;
-}
-#intro h4 {
-  color: white;
 }
 
 /*Section about*/
@@ -99,7 +96,6 @@ h1 {
 #about div {
   margin: 10vh;
   display: flex;
-  
 }
 
 /*Section navigation*/
@@ -164,18 +160,18 @@ h1 {
 #machines {
   background-color: var(--grey0);
   color: var(--text-color);
-  height:150vh;
+  height: 150vh;
 }
-#containerMachines{
+#containerMachines {
   display: flex;
   flex-wrap: wrap;
   margin: 10vh;
   justify-content: space-around;
 }
-#caracteristiques{
+#caracteristiques {
   max-width: 50%;
 }
-#machines p{
+#machines p {
   max-width: 50%;
 }
 #machines h3 {
@@ -191,7 +187,6 @@ h1 {
   max-width: 40%;
   height: auto;
 }
-
 
 /*Section Services*/
 #services {
@@ -211,9 +206,9 @@ h1 {
   width: 40vw;
   margin: 5vh;
 }
-#services img{
+#services img {
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
 /*Partenaires*/
@@ -292,4 +287,45 @@ footer {
 }
 footer a {
   color: var(--text-color);
+}
+
+/*display for small screen*/
+@media (max-width: 700px) {
+  #nav-bar {
+    display: none;
+  }
+  #navigation {
+    background-color: var(--grey1);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250vh;
+  }
+  #navigation i {
+    font-size: 15vh;
+    margin-left: 0%;
+    align-self: flex-start;
+  }
+
+  #partenaires div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #partenaires a {
+    margin: 1vh;
+    width: 40vw;
+  }
+  #logo-laureat {
+    width: 60vw;
+    height: 40vh;
+    margin: 0;
+    display: block;
+  }
+  #logo-mairie {
+    width: 60vw;
+    height: 40vh;
+    display: block;
+  }
 }
