@@ -66,11 +66,12 @@ section {
 }
 
 /*titre secondaire*/
-h2 {
+h1 {
   font-size: 2rem;
   margin-top: 2vh;
   margin-bottom: 5vh;
 }
+
 
 /*Section intro*/
 #intro img {
