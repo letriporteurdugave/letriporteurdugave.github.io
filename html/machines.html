@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les triporteurs</title>
     <link href="/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -27,6 +31,41 @@
         >
         <a class="nav-link" href="/index.html#contact">Contact</a>
       </nav>
+      <!-- smartphone menu Menu -->
+      <div class="topnav">
+        <a href="#home" class="active">Menu</a>
+        <div id="myLinks">
+          <a class="nav-link" href="/index.html"
+          ><img src="/images/iconeTDG.png" id="iconeTDG"
+        /></a>
+        <a class="nav-link" href="/html/about.html">Qui sommes-nous?</a>
+        <a class="nav-link" href="/html/projet.html">Le projet</a>
+        <a class="nav-link" href="/html/machines.html"
+          >Les triporteurs</a
+        >
+        <a class="nav-link" href="/html/actualites.html"
+          >Actualités</a
+        >
+        <a class="nav-link" href="/html/services.html">Services</a>
+        <a class="nav-link" href="/index.html#partenaires"
+          >Partenaires</a
+        >
+        <a class="nav-link" href="/index.html#contact">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
     </header>
     <section id="machines">
       <h1>Les triporteurs</h1>

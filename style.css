@@ -41,7 +41,9 @@ header {
   flex-grow: 2;
   z-index: 10;
 }
-
+.topnav {
+  display: none;
+}
 a {
   text-decoration: none;
   color: white;
@@ -53,7 +55,41 @@ a:hover {
   max-width: 100px;
   height: auto;
 }
+/*mobile nav bar*/
+.topnav {
+  overflow: hidden;
+  background-color: var(--blue);
+  position: relative;
+}
 
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: var(--blue);
+  color: white;
+}
 /*section generique*/
 section {
   height: 100vh;
@@ -174,7 +210,7 @@ h1 {
 #machines p {
   max-width: 50%;
 }
-#machines h3 {
+#machines h2 {
   margin-top: 5vh;
   margin-bottom: 2vh;
   text-align: left;
@@ -294,6 +330,9 @@ footer a {
   #nav-bar {
     display: none;
   }
+  .topnav {
+    display: block;
+  }
   #navigation {
     background-color: var(--grey1);
     color: var(--text-color);
@@ -328,4 +367,38 @@ footer a {
     height: 40vh;
     display: block;
   }
+  #about img,
+  #projet img,
+  #machines img {
+    display: none;
+  }
+  /*Section machines*/
+#machines {
+  background-color: var(--grey0);
+  color: var(--text-color);
+  height: 150vh;
 }
+#containerMachines {
+  display: flex;
+  flex-direction:column;
+  margin: 1vh;
+  margin-left: 10vw;
+  justify-content: space-around;
+}
+#caracteristiques {
+  max-width: 90%;
+}
+#machines p {
+  max-width: 90%;
+}
+#machines h2 {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  text-align: left;
+}
+#machines li {
+  margin-bottom: 2vh;
+}
+    
+  }
+
